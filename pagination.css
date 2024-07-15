@@ -1,0 +1,90 @@
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+/*  Page slider  */
+
+.pagination ul {
+    margin: 0 auto;
+    max-width: 25rem;
+    display: flex;
+    flex-wrap: wrap;
+    background: #1b1f26;
+    align-items: center;
+    border-radius: 50px;
+    justify-content: center;
+  }
+
+.pagination ul li{
+    color: grey;
+    list-style: none;
+    line-height: 2.5rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.pagination ul li.numb{
+    list-style: none;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0 0.3rem;
+    line-height: 1.5rem;
+    border-radius: 50%;
+
+}
+
+.pagination ul li.numb.first{
+    margin: 0px 3px 0 -5px;
+}
+
+.pagination ul li.numb.last{
+    margin: 0px -5px 0 3px;
+}
+
+.pagination ul li.dots{
+    font-size: 22px;
+    cursor: default;
+}
+
+.pagination ul li.btn{
+    padding: 0 1.5rem;
+    border-radius: 50px;
+}
+
+.pagination li.active,
+.pagination ul li.numb:hover{
+    color: #fff;
+    background: grey;
+}
+
+.pagination ul li:first-child:hover,
+.pagination ul li:last-child:hover {
+    color: #fff;
+}
+
+@media screen and (min-width:768px) {
+    .pagination ul {
+        max-width: 40rem;
+      }
+
+    .pagination ul li{
+        line-height: 5.5rem;     
+        font-size: 1.5rem;
+    }
+
+    .pagination ul li.numb{
+        height: 3rem;
+        width: 3rem;
+        margin: 0 3px;
+        line-height: 3rem;
+    }
+}
